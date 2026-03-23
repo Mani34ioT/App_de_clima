@@ -1,0 +1,33 @@
+/* Estilos para las imágenes en las tarjetas del Home */
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Estilos para la imagen principal en la vista de detalle */
+.detail-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Ajuste general de las tarjetas */
+.card {
+    background: white;
+    padding: 0; /* Quitamos padding para que la imagen llegue al borde */
+    border-radius: 12px;
+    overflow: hidden; /* Para que la imagen respete el redondeo de la tarjeta */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card h3, .card p {
+    padding: 0 10px;
+}
