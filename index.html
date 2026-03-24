@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App de Clima - Módulo 4</title>
+    <title>App de Clima Pro - Módulo 5</title>
     <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Pronóstico del Tiempo</h1>
+        <h1>Pronóstico del Tiempo Real</h1>
+        <p id="fecha-actual"></p>
     </header>
 
     <main id="app">
         <section id="home-view">
             <h2>Lugares Destacados</h2>
+            
             <div id="lista-lugares" class="grid-container">
+                <div class="loading-msg">
+                    <p>Obteniendo datos de la API 7timer...</p>
                 </div>
+            </div>
         </section>
 
         <section id="detail-view" style="display: none;">
-            <button onclick="mostrarHome()">← Volver al Inicio</button>
-            <div id="detalle-contenido"></div>
+            <button class="btn-volver" onclick="miApp.mostrarHome()">← Volver al Inicio</button>
+            <div id="detalle-contenido">
+                </div>
         </section>
     </main>
 
+    <footer>
+        <p>&copy; 2026 App de Clima - Desarrollo Frontend</p>
+    </footer>
+
     <script src="js/script.js"></script>
+    <script>
+        // Pequeño script para mostrar la fecha actual
+        document.getElementById('fecha-actual').innerText = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>
